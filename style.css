@@ -1,4 +1,4 @@
-/* Basic Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   padding: 20px;
 }
 
-/* Header */
+
 header {
    background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
@@ -63,7 +63,6 @@ header h1 {
   animation: bounce 0.3s;
 }
 
-/* Product Grid */
 #products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -89,7 +88,7 @@ nav {
   color: rgb(255, 255, 255);
   font-weight: 600;
   text-decoration: none;
-  padding: 8px 15px;
+  padding: 8px 8px;
   margin: 0 8px;
   border-radius: 6px;
   transition: background-color 0.3s ease;
@@ -156,7 +155,7 @@ nav {
   transform: scale(1.05);
 }
 
-/* Cart Section */
+
 #cart-section {
   background: white;
   padding: 20px;
@@ -194,7 +193,7 @@ body.login-page {
       align-items: center;
       position: relative;
     }
-    /* Overlay for darkening */
+
     body.login-page::before {
       content: "";
       position: absolute;
@@ -227,7 +226,7 @@ body.login-page {
     .login-container button {
       width: 100%;
       padding: 0.7rem;
-      background-color: #d32f2f; /* ROG red */
+      background-color: #d32f2f; 
       border: none;
       border-radius: 6px;
       color: white;
@@ -260,7 +259,7 @@ body.login-page {
       text-decoration: underline;
     }
 
-/* Animations */
+
 @keyframes fadeInUp {
   0% {
     transform: translateY(20px);
@@ -286,14 +285,14 @@ body.login-page {
   transition: all 0.3s ease-in-out;
 }
 
-/* Make logo bigger on desktop */
+
 @media (min-width: 768px) {
   .logo {
     width: 200px;
   }
 }
 
-/* Make logo smaller on small screens like mobile */
+
 @media (max-width: 767px) {
   .logo {
     width: 100px;
