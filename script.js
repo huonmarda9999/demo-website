@@ -208,7 +208,7 @@ function payNow() {
 
   alert(`Thank you for your purchase!\nTotal: $${total.toFixed(2)}\nAfter Discount: $${discounted.toFixed(2)}`);
   
-  // Reset cart
+
   cart = [];
   updateCart();
   document.getElementById("discount-total").textContent = "0.00";

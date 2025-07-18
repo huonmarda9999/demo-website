@@ -117,9 +117,9 @@ nav {
 }
 
 .product:hover {
-  transform: translateY(-8px); /* gently lift the product */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* subtle shadow */
-  background-color: #f9f9f9; /* slight background highlight */
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+  background-color: #f9f9f9; 
 }
 
 .product img {
@@ -364,7 +364,7 @@ footer p {
   background-color: #218838;
 }
 .buttons button:hover {
-  background-color: #0053ba; /* darker blue */
+  background-color: #0053ba; 
   color: white;
   transition: background-color 0.3s ease;
   cursor: pointer;
