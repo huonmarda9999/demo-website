@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="km">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login - My Shop</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ចូលប្រើ - ហាងកុំព្យូទ័រ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body class="login-page">
   <div class="login-container">
-    <h2>Login to Computer Store</h2>
+    <h2>ចូលទៅហាងកុំព្យូទ័រ</h2>
     <form id="login-form" autocomplete="off">
-      <input type="text" id="username" placeholder="Username" required />
-      <input type="password" id="password" placeholder="Password" required />
-      <button type="submit">Login</button>
+      <input type="text" id="username" placeholder="ឈ្មោះអ្នកប្រើ..." />
+      <input type="password" id="password" placeholder="លេខសម្ងាត់..." />
+      <button type="submit">ចូល</button>
     </form>
     <p class="error" id="error-msg"></p>
     <div class="extra-links">
-      <a href="#" onclick="alert('Password recovery instructions sent!')">Forgot Password?</a>
-      <a href="#" onclick="alert('More info coming soon!')">More Info</a>
+      <a href="#" onclick="alert('បានផ្ញើការណែនាំស្តីពីការស្ដារលេខសម្ងាត់!')">ភ្លេចលេខសម្ងាត់?</a>
+      <a href="#" onclick="alert('ព័ត៌មានបន្ថែមនឹងមកឆាប់ៗនេះ!')">ព័ត៌មានបន្ថែម</a>
     </div>
   </div>
 
   <script>
     document.getElementById("login-form").addEventListener("submit", function (e) {
       e.preventDefault();
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value.trim();
 
-      if (username === "admin" && password === "1234") {
-        window.location.href = "shop.html";
-      } else {
-        document.getElementById("error-msg").textContent = "Invalid credentials!";
-      }
+      window.location.href = "shop.html"; 
     });
   </script>
 </body>

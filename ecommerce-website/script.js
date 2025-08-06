@@ -89,13 +89,13 @@ const cartItems = document.getElementById("cart-items");
 const cartTotal = document.getElementById("cart-total");
 const cartCount = document.getElementById("cart-count");
 
-// Cart will now hold {product, quantity}
+
 let cart = [];
 
 function renderProducts() {
   if (!productContainer) return;
 
-  productContainer.innerHTML = ""; // Clear before render
+  productContainer.innerHTML = "";
 
   products.forEach((product, index) => {
     const div = document.createElement("div");
@@ -115,7 +115,7 @@ function addToCart(id) {
   const product = products.find(p => p.id === id);
   if (!product) return;
 
-  // Check if product already in cart
+
   const cartItem = cart.find(item => item.product.id === id);
   if (cartItem) {
     cartItem.quantity++;
@@ -182,7 +182,7 @@ function calculateTotal() {
   let total = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
   cartTotal.textContent = total.toFixed(2);
 
-  // Reset discount display when recalculating total
+
   document.getElementById("discount-total").textContent = total.toFixed(2);
 }
 
@@ -191,10 +191,10 @@ function applyDiscount() {
   let discount = total * 0.1;
   let discountedTotal = total - discount;
 
-  // Keep showing original total
+
   cartTotal.textContent = total.toFixed(2);
 
-  // Show discounted total
+
   document.getElementById("discount-total").textContent = discountedTotal.toFixed(2);
 }
 function payNow() {
@@ -208,7 +208,7 @@ function payNow() {
 
   alert(`Thank you for your purchase!\nTotal: $${total.toFixed(2)}\nAfter Discount: $${discounted.toFixed(2)}`);
   
-  // Reset cart
+
   cart = [];
   updateCart();
   document.getElementById("discount-total").textContent = "0.00";
